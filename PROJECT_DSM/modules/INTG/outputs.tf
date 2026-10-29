@@ -1,4 +1,4 @@
-output "myserver_intg" {
+output "myserver" {
   value = module.intg_compute.myserver_intg
 }
 
