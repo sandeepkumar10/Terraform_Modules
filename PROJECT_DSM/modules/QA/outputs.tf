@@ -1,5 +1,5 @@
-output "myserver_qa" {
-  value = module.qa_compute.myserver_qa
+output "myserver_details" {
+  value = module.qa_compute.myserver_details
 }
 
 output "security_group_id" {
