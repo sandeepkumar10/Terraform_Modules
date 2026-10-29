@@ -1,5 +1,5 @@
-output "myserver" {
-  value = module.intg_compute.myserver_intg
+output "myserver_details" {
+  value = module.intg_compute.myserver_details
 }
 
 output "security_group_id" {
