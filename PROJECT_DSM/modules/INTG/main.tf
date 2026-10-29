@@ -1,4 +1,4 @@
-module "intg_compute" {
+module "compute" {
   source = "/root/PROJECT_DSM/envs/INTG/compute"
   name   = "dsmintg_server"
   ami    = "ami-0c7dc2f4e28e6e66e"
@@ -9,13 +9,13 @@ module "intg_compute" {
   volume = 12
 }
 
-module "intg_security" {
+module "security" {
   source  = "/root/PROJECT_DSM/envs/INTG/security"
   sg_name = "dsmintg_security_group"
   port    = [22, 80, 443, 8000]
 }
 
-module "intg_storage" {
+module "storage" {
   source      = "/root/PROJECT_DSM/envs/INTG/storage"
   bucket_name = "dsmintg.s3.bucket"
 }
